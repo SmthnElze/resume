@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,91 +8,119 @@
     <meta name="keywords" content="Artemenko, cv, resume">
     <meta name="description" content="Это сайт-резюме Артеменко Сергея">
     <title>Artemenko Resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-<img src="artemenkos.jpg" width="200" alt="тут могла бы быть ваша физиономия">
+    <div class="container">
+        <div class="info">
+            <img src="artemenkos.jpg" class="avatar" alt="тут могла бы быть ваша физиономия">
+            <div class="info-text">
+                <h1>Артеменко Сергей</h1>
 
-    <h1>Артеменко Сергей</h1>
+                <p>Будущий <strong>Junior Frontend Developer</strong>, ранее занимался <strong>недвижимостью</strong>,
+                    по
+                    образованию <strong>Психолог</strong></p>
 
-    <p>Будущий <strong>Junior Frontend Developer</strong>, ранее занимался <strong>недвижимостью</strong>, по образованию <strong>Психолог</strong></p>
+                <p>Люблю играть в <em>баскетбол, путешествовать, музыкальные концерты</em>, а также свою <em>жену и
+                        сына</em>
+                </p>
 
-    <p>Люблю играть в <em>баскетбол, путешествовать, музыкальные концерты</em>, а также свою <em>жену и сына</em></p>
+                <h4>Список социальных сетей:</h4>
+                <a href="https://vk.com/smthn_wrng" target="_blank">VK</a>
+                |
+                <a href="https://facebook.com/sergius421" target="_blank">Facebook</a>
+                |
+                <a href="https://www.instagram.com/smthn_elze" target="_blank">Instagram</a>
+                |
+                <a href="https://t.me/smthn_elze" target="_blank">Telegram</a>
+            </div>
+        </div>
 
-    <h4>Список социальных сетей:</h4>
-    <a href="https://vk.com/smthn_wrng" target="_blank">VK</a>
-    |
-    <a href="https://facebook.com/sergius421" target="_blank">Facebook</a>
-    |
-    <a href="https://www.instagram.com/smthn_elze" target="_blank">Instagram</a>
-    |
-    <a href="https://t.me/smthn_elze" target="_blank">Telegram</a>
+        <div class="card bg-green">
+            <h2>Мои хобби</h2>
 
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Баскетбол</li>
-        <li>Путешествия</li>
-        <li>ПК и настольные игры</li>
-        <li>Котики</li>
-        <li>Скейтборд</li>
-    </ol>
+            <ol class="list">
+                <li>Баскетбол</li>
+                <li>Путешествия</li>
+                <li>ПК и настольные игры</li>
+                <li>Котики</li>
+                <li>Скейтборд</li>
+            </ol>
+        </div>
 
-    <h2>Опыт работы</h2>
+        <div class="card bg-red">
+            <h2>Опыт работы</h2>
 
-    <table> 
-        <thead> 
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-       <tbody>
-            <tr>
-                <td>Megafon Retail</td>
-                <td>Зам Управляющего</td>
-                <td>2017-2019</td>
-            </tr>
-            <tr>
-                <td>Capital Mars</td>
-                <td>Ведущий агент</td>
-                <td>2019-2020</td>
-            </tr>
-            <tr>
-                <td>Apple Real Estate</td>
-                <td>Эксперт по недвижимости</td>
-                <td>2020-2022</td>
-            </tr>
-        </tbody>
-    </table>
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead> -->
+                <tbody>
+                    <tr>
+                        <td>Megafon Retail</td>
+                        <td>Зам Управляющего</td>
+                        <td>2017-2019</td>
+                    </tr>
+                    <tr>
+                        <td>Capital Mars</td>
+                        <td>Ведущий агент</td>
+                        <td>2019-2020</td>
+                    </tr>
+                    <tr>
+                        <td>Apple Real Estate</td>
+                        <td>Эксперт по недвижимости</td>
+                        <td>2020-2022</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-    <h2>Связаться со мной</h2>
+        <div class="card bg-yellow">
+            <h2>Мои курсы</h2>
 
-    <form action="/">
-
-       <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
-       </div>
-
-      <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
-       </div>
-
-       <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
-       </div>
-
-       <button type="submit">Отправить!</button>
-
-    </form>
+            <ul class="link-list">
+                <li><a href="https://result.school/products/html-css">HTML & CSS − это первый шаг, чтобы стать
+                        IT-разработчиком</a></li>
+            </ul>
+        </div>
 
 
-    <br>
-    <br>
+
+
+        <form action="/" class="form">
+            <h2>Связаться со мной</h2>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Ваше сообщение:</label>
+                <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+            </div>
+
+            <button class="btn" type="submit">Отправить!</button>
+        </form>
+
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
 
 </body>
+
 </html>
